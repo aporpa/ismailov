@@ -1,6 +1,7 @@
 body {
 		font-family: 'roboto', sans-serif;
 		line-height: 1.55em;
+		background: rgb(247,247,247);
 }
 
 img { max-width: 100%; }
@@ -40,7 +41,10 @@ ul {
 		flex-flow: row wrap;
 		max-width: 720px;
 		/*margin: 1.45em 3em 0 3em;*/
-		margin: 2.55em auto 0 auto;
+		margin: 3em auto 0 auto;
+		background: rgb(255,255,255);
+		padding: 0 2em 0 2.25em;
+		border: 1px solid rgb(240,240,240);
 }
 
 .flex-container * {
@@ -52,7 +56,7 @@ ul {
 	flex: 1;
 	flex-shrink: 0;
 	-webkit-flex-basis: auto; /* Если элементы не переносятся на новые
-							строки, можно поставить flex-basis на ~200px */
+						строки, можно поставить flex-basis на ~200px */
 	flex-basis: auto;
 	width: 100%;
 }
@@ -63,4 +67,8 @@ ul {
 	flex-shrink: 0;
 	flex-basis: auto;
 	width: 100%;
+}
+
+.left {
+	width: 41%;
 }
