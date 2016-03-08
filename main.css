@@ -44,11 +44,25 @@ ul {
 		margin: 3em auto 0 auto;
 		background: rgb(255,255,255);
 		padding: 0 2em 0 2.25em;
-		border: 1px solid rgb(240,240,240);
+		border: 1px solid rgb(237,237,237);
 }
 
 .flex-container * {
 	/*outline: 1px solid grey;*/
+}
+
+.header {
+	-webkit-flex: 1;
+	flex: 1;
+	flex-shrink: 0;
+	-webkit-flex-basis: auto;
+	flex-basis: auto;
+	/*height: 100px;*/
+	background: rgb(78,129,155);
+	color: white;
+	font-size: 1.2em;
+	padding: 20px;
+	text-align: center;
 }
 
 .content {
@@ -58,8 +72,18 @@ ul {
 	-webkit-flex-basis: auto; /* Если элементы не переносятся на новые
 						строки, можно поставить flex-basis на ~200px */
 	flex-basis: auto;
-	width: 100%;
+	/*width: 50%;*/
 }
+
+.photo {
+	-webkit-flex: 1;
+	flex: 1;
+	flex-shrink: 0;
+	-webkit-flex-basis: auto;
+	flex-basis: 150px;
+	padding: 2em 1em 0 0;
+}
+
 
 .portfolio {
 	-webkit-flex: 1;
@@ -70,5 +94,6 @@ ul {
 }
 
 .left {
-	width: 41%;
+	width: 40%;
 }
+
